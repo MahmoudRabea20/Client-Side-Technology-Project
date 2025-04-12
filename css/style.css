@@ -1,0 +1,92 @@
+/* body {
+    background: repeating-radial-gradient(circle,#13515b,#08202d);
+
+} */
+
+/* body {
+    background: radial-gradient(circle, #13515b, #08202d); 
+} */
+
+* {
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+/* Start Header */
+
+/* End Header */
+
+/* Start Body */
+.sidebarm {
+    background-color: rgb(17, 54, 54);
+    color: white;
+    width: 250px; 
+    height: 100vh; 
+    position: fixed;
+    padding: 20px;
+}
+
+@media (max-width: 500px) {
+    .sidebarm {
+        width: 150px;
+    }
+
+}
+
+.sidebarm a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+    text-align: start;
+    align-items: center;
+
+}
+
+.sidebarm .my-link {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.sidebarm .my-link:hover, .sidebarm .my-link.active {
+    background: #26aa8d;
+    border-radius: 5px;
+
+}
+
+#containerm {  
+    padding: 20px; 
+    width: calc(100% - 280px); 
+    float: right;
+}
+
+@media (max-width: 500px) {
+    #containerm {
+        width: calc(100% - 180px); 
+    }
+
+}
+
+.my-input,
+.my-productsm {
+    background-color: rgb(17, 54, 54);
+    color: white;
+
+}
+.my-buttonm {
+    display: block;
+    background: #26aa8d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    margin: 10px auto;
+}
+
+
+/* End Body */
