@@ -16,8 +16,22 @@
     <h1 style="color: #089933;">jkbfkdhknsdjnfjklsd</h1> -->
 
     <!-- Write your code here  -->
-
+    
     <!-- Start Header -->
+    
+    <div class="my-navm text-white " >
+        <div class="my-log">
+            <img src="../Resources/logo.png" alt="Logo" class="rounded-circle text-center my-logo-image" style="height: 80px; width: 80px; padding: 10px;">
+            <div class="d-inline my-logo-word ms-2">E-commerce</div>
+        </div>
+        <div class="db">Dashboard</div>
+        <div class="sign" >
+            <button class="my-buttonm my-5"><a style="color: white;"  class=" text-decoration-none" href="Home.index">Log out</a></button>
+        </div>
+    </div>
+    <div class="linem" ></div>
+
+
     <!-- End Header -->
     
     <!-- Start Body -->
@@ -25,20 +39,20 @@
         <div class="sidebarm">
             <div class="my-link active" data-content="section1"><a class="tab-link" >Products</a></div>
             <div class="my-link" data-content="section2"><a class="tab-link" >Categories</a></div>
-            <div class="my-link" data-content="section3"><a class="tab-link" >Orders</a></div>
+            <div class="my-link" data-content="section3" ><a class="tab-link" >Orders</a></div>
             <div class="my-link" data-content="section4"><a class="tab-link" >Add Admins</a></div>
         </div>
 
 
-        <!-- ADD product -->
-
-        <div class="container p-2 m-3 mt-2 ps-2 pe-2" id="containerm">
+        
+        <div class="container " id="containerm">
             
+            <!-- Start of Add product -->
             <div id="my-formm" class="row my-input d-flex justify-content-center pt-3">
                 <div class="text-center">
                     <h1>Add Products</h1>
-                </div>
-                <div class="col-12 col-sm-10 col-lg-8  p-5 ">
+                    </div>
+                    <div class="col-12 col-sm-10 col-lg-8  p-3 ">
                     <form>
                         <div>
                             <input type="text " class="form-control" hidden id="keym" placeholder="Enter Key">
@@ -49,8 +63,8 @@
                             <span id="idError" style="color: red; visibility: hidden;">Error</span>
                         </div>
                         <div class="mb-3">
-                            <label for="titlem" class="form-label">Title:</label>
-                            <input type="text" class="form-control" id="titlem" placeholder="Enter The Title">
+                            <label for="titlem" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="titlem" placeholder="Enter The Name">
                             <span id="titleError" style="color: red; visibility: hidden;">Error</span>
                         </div>
                         <div class="mb-3">
@@ -75,17 +89,19 @@
                             <input type="text" class="form-control" id="imagem" placeholder="Enter The Source Of Image">
                             <span id="sourceError" style="color: red; visibility: hidden;">Error</span>
                         </div>
-                        <input type="submit" class="my-buttonm btn" value="Add Product"></input>
+                        <div class="mb-3">
+                            <label for="quantitym" class="form-label">Stock Quantity:</label>
+                            <input type="text" class="form-control" id="quantitym" placeholder="Enter The quantity of stock">
+                            <span id="quantityError" style="color: red; visibility: hidden;">Error</span>
+                        </div>
+                        <input type="submit" class="my-buttonm btn" value="Add New Product"></input>
                     </form>
-
                     
                     
-
+                    
                 </div>
             </div>
-
-            
-            <div id="my-pro" class="row my-productsm  ">
+            <div id="my-pro" class="row my-productsm d-flex justify-content-center pt-3 ">
                 <div  class="col-12">
                     <div class="text-center my-3">
                         <h1>All Produts</h1>
@@ -93,27 +109,18 @@
                     <div><button class="my-buttonm my-5 btn" onclick="getProducts();">Show Products</button></div>
                 </div>
                 
-            </div>
+            </div> 
             
-        </div>
-
-        <!-- Categories -->
-
-        <!-- <div class="container p-2 m-3 mt-2 ps-2 pe-2" id="containerm">
+            <!-- End of Add product -->
             
-            <div id="my-formm" class="row my-input d-flex justify-content-center pt-3">
 
 
-                
-            </div>
 
-        </div>    -->
+        </div> 
+
             
-    </div>    
- <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-    <!-- End Body -->
+    </div> 
 
-    
     <!-- BootStrab js library -->
     <script src="../js/bootstrap/bootstrap.bundle.js"></script>
     <!-- Font awesome library -->
