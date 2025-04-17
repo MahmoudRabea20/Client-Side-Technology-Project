@@ -1,162 +1,88 @@
-/* body {
-    background: repeating-radial-gradient(circle,#13515b,#08202d);
 
-} */
-
-/* body {
-    background: radial-gradient(circle, #13515b, #08202d); 
-} */
-
-* {
-    box-sizing: border-box;
-    font-family: "Titillium Web", sans-serif;
-}
-/* Start Header */
-
-.my-navm {
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    background-color: rgb(17, 54, 54);
-    height: 75px;
-    position: fixed;
-    z-index: 100;
+body,
+.inputs {
+  background-color: #24353f;
 }
 
-@media (min-width:500px) {
-    .my-logo-word {
-        font-size: 30px;
-    
-    }
-    .my-logo-image {
-        margin-left: 50px;
-    }
-    .sign {
-        margin-right: 50px;
-    }
+.carousel-item img{
+  height: 300px;
 }
+
+
+@media (min-width:500px) 
+{  
+  .my-logo-image {
+      margin-left: 50px;
+  }
+}
+
 @media (max-width:500px) {
-    .my-logo-image {
-        margin-left: 25px;
-    }
-    .sign {
-        margin-right: 25px;
-    }
+  .my-logo-image {
+      margin-left: 25px;
+  
 }
-.sign,
-.my-log {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.db {
-
-    color: white;
-    font-size: 30px;
-    margin-top: 5px;
-
-
-}
-@media (max-width:630px) {
-    .my-logo-word {
-        display: none !important;
-    }
-}
-.linem {
-    z-index: 99; 
-    margin-left: -20px; 
-    height: 8px; 
-    width: calc(100% - 250px);
-    right:0px; 
-    background-color: white; 
-    position: fixed; 
-    top: 75px;
 }
 
-@media (max-width: 500px) {
-    .linem {
-        width: calc(100% - 150px);
-    }
-    
-}
-/* End Header */
-
-/* Start Body */
-.sidebarm {
-    background-color: rgb(17, 54, 54);
-    color: white;
-    width: 250px; 
-    height: calc(100vh - 74px); 
-    position: fixed;
-    top: 74px;
-    padding: 20px;
-}
-
-@media (max-width: 500px) {
-    .sidebarm {
-        width: 150px;
-    }
-
-}
-
-.sidebarm a {
-    margin: 10px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    transition: 0.3s;
-    text-align: start;
-    align-items: center;
-
-}
-
-.sidebarm .my-link {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-
-.sidebarm .my-link:hover, .sidebarm .my-link.active {
-    background: #26aa8d;
-    border-radius: 5px;
-
-}
-
-#containerm {  
-    padding: 20px; 
-    width: calc(100% - 250px); 
-    float: right;
-}
-
-@media (max-width: 500px) {
-    #containerm {
-        width: calc(100% - 150px); 
-    }
-
-}
-
-.my-input,
-.my-productsm {
-    background-color: rgb(17, 54, 54);
-    color: white;
-    margin-top: 60px;
-
-}
 .my-buttonm {
-    display: block;
-    background: #26aa8d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px 10px 15px;
-    margin: 10px auto;
+  display: block;
+  background: #26aa8d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  margin: 10px auto;
 }
 
+.newn{
+  background-color: rgb(17, 54, 54);
+}
 
-/* End Body */
+.inputs {
+  border-radius: 5px;
+  border: 1px outset white;
+}
+
+p {
+  font-weight: 600;
+}
+p,
+h6 {
+  color: #089933;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.692);
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.button {
+  border: 1px outset#089933;
+  background-color: #24353f;
+}
+.button:hover {
+  background-color: #089933;
+}
+.button:hover h6 {
+  color: #f3f7f8;
+}
+h6 {
+  font-size: 18px;
+}
+.container {
+  background-color: #24353f;
+  box-shadow: 3px 3px 20px 10px rgb(3, 148, 46);
+  margin: auto;
+  margin-top: 100px;
+}
+
+a {
+  text-decoration-line: none;
+  cursor: pointer;
+
+}
+.badge {
+  top: 20%;
+  left: 47%;
+}
