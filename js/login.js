@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var emailinput = document.getElementById("emailinput");
 var passwordinput = document.getElementById("passwordinput");
 var input1 = document.getElementById("input1");
@@ -141,3 +142,6 @@ loginbutton.onclick = async function () {
     this.classList.add("text-white");
   });
  
+=======
+
+>>>>>>> 2a4a1dd5b82ce9b4cf41194ada99a790dca78003

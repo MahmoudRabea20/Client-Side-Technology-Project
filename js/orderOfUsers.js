@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
 
@@ -75,3 +76,6 @@ async function Orders() {
   
   
   Orders();
+=======
+
+>>>>>>> 2a4a1dd5b82ce9b4cf41194ada99a790dca78003

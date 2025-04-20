@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var arr = [];
 var newArray = [];
 let wishlistItems = [];
@@ -523,3 +524,6 @@ function removeFromWishList(productKey){
     })
     
 }
+=======
+
+>>>>>>> 2a4a1dd5b82ce9b4cf41194ada99a790dca78003

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", getWishList);
 
 function getWishList(){
@@ -82,3 +83,6 @@ function unlikeProduct(id){
 
 
 }
+=======
+
+>>>>>>> 2a4a1dd5b82ce9b4cf41194ada99a790dca78003

@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 /*       Get data of categories from firebase */
 
 function getCategories(){
@@ -1273,6 +1274,8 @@ try {
 
 
   
+=======
+>>>>>>> 2a4a1dd5b82ce9b4cf41194ada99a790dca78003
 
 
 
