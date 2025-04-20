@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background: radial-gradient(circle, #135e69, #0d3448) !important;
   color: white !important;
@@ -6,6 +7,8 @@ body {
 
 
 
+=======
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 .quote-icon {
     width: 50px;
     height: 50px;
@@ -30,7 +33,10 @@ body {
     padding: 40px 30px 30px;
     margin-top: 50px;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
   
   .quote-card .author {
     font-style: italic;

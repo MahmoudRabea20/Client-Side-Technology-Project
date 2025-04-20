@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 body {
     background-color: white;
 
 }
+=======
+/* body {
+    background: repeating-radial-gradient(circle,#13515b,#08202d);
+
+} */
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 
 /* body {
     background: radial-gradient(circle, #13515b, #08202d); 
@@ -26,9 +33,14 @@ body {
 }
 
 .my-wishm {
+<<<<<<< HEAD
     /* background: radial-gradient(circle, #135e69,#0d3448) !important ; */
     color: white;
     margin-top: 40px;
+=======
+    background-color: rgb(17, 54, 54);
+    color: white;
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 }
 
 @media (min-width:500px) {
@@ -150,7 +162,11 @@ body {
 
 .my-input,
 .my-productsm {
+<<<<<<< HEAD
     /* background: radial-gradient(circle, #135e69, #0d3448) !important; */
+=======
+    background-color: rgb(17, 54, 54);
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
     color: white;
 
 }
@@ -164,6 +180,7 @@ body {
     margin: 10px auto;
 }
 
+<<<<<<< HEAD
 .my-pronavm {
     display: block;
     /* background: #26aa8d; */
@@ -178,5 +195,7 @@ body {
 .pronavm:hover {
     color: #26aa8d !important;
 }
+=======
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 
 /* End Body */

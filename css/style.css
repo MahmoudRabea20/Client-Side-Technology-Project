@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background: radial-gradient(circle, #135e69,#0d3448) !important ;
   color: white !important;
@@ -24,6 +25,18 @@ body {
   color: red;
 }
 
+=======
+
+body,
+.inputs {
+  background-color: #24353f;
+}
+
+.carousel-item img{
+  height: 300px;
+}
+
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 
 @media (min-width:500px) 
 {  
@@ -47,6 +60,7 @@ body {
   border-radius: 5px;
   padding: 10px 15px 10px 15px;
   margin: 10px auto;
+<<<<<<< HEAD
 }
 
 .newn{
@@ -89,9 +103,41 @@ h6 {
 .button {
   border: 1px outset#089933;
   background-color: #24353f;
+=======
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 }
 
+.newn{
+  background-color: rgb(17, 54, 54);
+}
 
+<<<<<<< HEAD
+=======
+.inputs {
+  border-radius: 5px;
+  border: 1px outset white;
+}
+
+p {
+  font-weight: 600;
+}
+p,
+h6 {
+  color: #089933;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.692);
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.button {
+  border: 1px outset#089933;
+  background-color: #24353f;
+}
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 .button:hover {
   background-color: #089933;
 }

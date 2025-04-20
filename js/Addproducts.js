@@ -100,13 +100,21 @@ const contentData = {
     
     ,
     
+<<<<<<< HEAD
     section2: `  <div class="container  my-input pt-3 text-white">
+=======
+    section2: `  <div class="container my-input text-white">
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 
   <h1 class="mb-4 text-center">Categories Section</h1>
 
   <!-- Admin Form -->
   
+<<<<<<< HEAD
       <div class="row my-input d-flex justify-content-center pt-3">
+=======
+      <div class="row g-3">
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
         <div class="col-md-12 mb-3">
           <label class="form-label">ID</label>
           <input type="number" class="form-control" id="idCategory" placeholder="please , Enter Category ID ">
@@ -118,11 +126,19 @@ const contentData = {
         
      
       <div class="mt-12 mx-auto  text-center">
+<<<<<<< HEAD
         <button class="btn btn-primary mx-auto p-2 w-25 my-buttonm" id="saveCategory" onclick="saveCategory()">Save</button>
         <button class="btn btn-success d-none mx-auto p-2 w-25" id="UpdateCategpry" onclick="UpdateCategory()">Update</button>
       </div>
      <h2 class=" text-center mt-5 mb-2">All Categories</h2>
 <button onclick="ShowCategoryTable()" class="btn btn-primary my-3 w-25 text-center mx-auto p-2 my-buttonm">Show Categories</button>
+=======
+        <button class="btn btn-primary mx-auto p-2 w-25" id="saveCategory" onclick="saveCategory()">Save</button>
+        <button class="btn btn-success d-none mx-auto p-2 w-25" id="UpdateCategpry" onclick="UpdateCategory()">Update</button>
+      </div>
+     <h2 class=" text-center mt-5 mb-2">All Categories</h2>
+<button onclick="ShowCategoryTable()" class="btn btn-primary my-3 w-25 text-center mx-auto p-2">Show Categories</button>
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
   <!-- Admin Table -->
  
   <div id="tableContainerCategory"  style="display: none;">
@@ -153,7 +169,11 @@ const contentData = {
     
     `,
     section4: `
+<<<<<<< HEAD
     <div class="container pt-3 my-input text-white">
+=======
+    <div class="container my-input text-white">
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 
   <h1 class="mb-4 text-center">Admin Section</h1>
 
@@ -178,11 +198,19 @@ const contentData = {
         </div>
      
       <div class="mt-12 mx-auto  text-center">
+<<<<<<< HEAD
         <button class="btn btn-primary mx-auto p-2 w-25 my-buttonm" id="save" onclick="saveAdmin()">Save</button>
         <button class="btn btn-success d-none mx-auto p-2 w-25" id="Update" onclick="UpdateAdmin()">Update</button>
       </div>
      <h2 class=" text-center mt-5 mb-2">All Admins</h2>
 <button onclick="ShowTable()" class="btn btn-primary my-3 w-25 text-center mx-auto p-2 my-buttonm">Show Admins</button>
+=======
+        <button class="btn btn-primary mx-auto p-2 w-25" id="save" onclick="saveAdmin()">Save</button>
+        <button class="btn btn-success d-none mx-auto p-2 w-25" id="Update" onclick="UpdateAdmin()">Update</button>
+      </div>
+     <h2 class=" text-center mt-5 mb-2">All Admins</h2>
+<button onclick="ShowTable()" class="btn btn-primary my-3 w-25 text-center mx-auto p-2">Show Admins</button>
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
   <!-- Admin Table -->
  
   <div id="tableContainer"  style="display: none;">
@@ -522,9 +550,12 @@ function addProducts(product) {
             console.log(err);
             
         })
+<<<<<<< HEAD
 
         let myBtn = document.querySelector("#myBtn");
         myBtn.value = "Add New Product";
+=======
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
         
     }
 
@@ -615,9 +646,12 @@ function removeProduct(id){
 
 function updateProduct(ID,id, title, description, category, price, source, quantity)  {
 
+<<<<<<< HEAD
     let myBtn = document.querySelector("#myBtn");
     myBtn.value = "Update Product";
 
+=======
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
     
     keyInput.value = ID;
     idInput.value = id;
@@ -876,11 +910,19 @@ async function saveAdmin() {
     }
 
     // Regex of name 
+<<<<<<< HEAD
   nameRegex = /^admin[A-Za-z\s_-]+$/;
     if (!nameAdminInput.value.trim()) return alert("Please enter Admin name.");
     if (!nameRegex.test(nameAdminInput.value.trim())) return alert("Name must start with admin and contain letters and spaces only .");
     for (const key in admins) {
       if (admins[key].name === nameAdminInput.value.trim()) return alert("Name already exists.");
+=======
+  nameRegex = /^[A-Za-z\s_-]+$/;
+    if (!nameAdminInput.value.trim()) return alert("Please enter Admin name.");
+    if (!nameRegex.test(nameAdminInput.value.trim())) return alert("Name must contain letters and spaces only.");
+    for (const key in admins) {
+      if (admins[key].name === nameInput.value.trim()) return alert("Name already exists.");
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
     }
 // Regex of Email
    emailRegex = /^admin[A-Za-z0-9._%+-]*@[A-Za-z0-9.-]+\.com$/i;
@@ -890,9 +932,15 @@ async function saveAdmin() {
       if (admins[key].email === EmailInpute.value.trim()) return alert("Email already exists.");
     }
 // Regex of password
+<<<<<<< HEAD
   PasswordRegex = /^[A-Z](?=.*\d)(?=.*[!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?]).*$/;
     if (!PasswordInput.value.trim()) return alert("Please enter Admin password.");
     if (!PasswordRegex.test(PasswordInput.value.trim())) return alert("Is Password must start with uppercase letter and include at least 1 number and 1 special character.");
+=======
+  PasswordRegex = /^[A-Z](?=.*\d)(?=.*[@*?])[A-Za-z\d@*?]{7,}$/;
+    if (!PasswordInput.value.trim()) return alert("Please enter Admin password.");
+    if (!PasswordRegex.test(PasswordInput.value.trim())) return alert("Password must start with uppercase letter and include at least 1 number and 1 special character.");
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
   
     // add admin
     const Admin = {
@@ -948,10 +996,15 @@ async function showAdmins() {
             }
         } catch (error) {
             console.error("Error loading categories:", error);
+<<<<<<< HEAD
         
         }
         
 }
+=======
+        }
+    }
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 
 
 //NOTE  delete admin 
@@ -962,7 +1015,11 @@ async function deleteAdmin(id) {
         });
         showAdmins();
     } catch (err) {
+<<<<<<< HEAD
         console.error("Error deleting category:", err);
+=======
+        console.error("Error deleting category:", err);
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
     }
 }
 
@@ -1006,19 +1063,34 @@ PasswordInput = document.getElementById("password");
 nameRegex = /^[A-Za-z\s_-]+$/;
 if (!nameAdminInput.value.trim()) return alert("Please enter Admin name.");
 if (!nameRegex.test(nameAdminInput.value.trim())) return alert("Name must contain letters and spaces only.");
+<<<<<<< HEAD
 
 
 
 
 PasswordRegex = /^[A-Z](?=.*\d)(?=.*[!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?]).*$/;
+=======
+for (const key in admins) {
+  if (admins[key].name === nameAdminInput.value.trim()) return alert("Name already exists.");
+}
+
+
+
+PasswordRegex = /^[A-Z](?=.*\d)(?=.*[@*?])[A-Za-z\d@*?]{7,}$/;
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 if (!PasswordInput.value.trim()) return alert("Please enter Admin password.");
 if (!PasswordRegex.test(PasswordInput.value.trim())) return alert("Password must start with uppercase letter and include at least 1 number and 1 special character.");
 
   
 
 const updatedAdmin = {
+<<<<<<< HEAD
     id: idAdminInpute.value.trim(),
     name: nameAdminInput.value.trim(),
+=======
+    id: idInpute.value.trim(),
+    name: nameInput.value.trim(),
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
     email: EmailInpute.value.trim(),
     password: PasswordInput.value.trim()
   };
@@ -1039,6 +1111,7 @@ const updatedAdmin = {
     saveButton.classList.remove("d-none");
   } catch (err) {
     console.error("Error updating admin:", err);
+<<<<<<< HEAD
     }
 }
 
@@ -1058,6 +1131,17 @@ function clearForm() {
 
 
   
+=======
+  }
+}
+ 
+function clearForm() {
+    document.getElementById("id").value = '';
+    document.getElementById("name").value = '';
+    document.getElementById("email").value = '';
+    document.getElementById("password").value = '';
+  }
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 
 //NOTE   function that will work when click on All Admins Button
 function ShowTable() {
@@ -1069,7 +1153,11 @@ function ShowTable() {
     } else {
       tableContainer.style.display = "none";
     }
+<<<<<<< HEAD
 }
+=======
+  }
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 
 
 

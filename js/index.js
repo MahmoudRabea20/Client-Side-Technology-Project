@@ -88,6 +88,7 @@ window.onload = function (e) {
 };
 
 async function getproducts() {
+<<<<<<< HEAD
   try {
     const [productRes, wishlistRes] = await Promise.all([
       fetch("https://client-side-technology-default-rtdb.firebaseio.com/product.json"),
@@ -111,10 +112,21 @@ async function getproducts() {
 getproducts();
 var box = "";
 let it1 = 1;
+=======
+  var res = await fetch("https://client-side-technology-default-rtdb.firebaseio.com/product.json");
+  var data = await res.json();
+  console.log(data);
+  d = data;
+  displaypro(d);
+}
+getproducts();
+var box = "";
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 async function displaypro(d) {
   var iter = 0;
 
   for (const i in d) {
+<<<<<<< HEAD
     if (iter == 8) {
       break;
     }
@@ -133,6 +145,21 @@ box +=    `
                 <h5 class="card-title ">${d[i].Price} EGP</h5>
                 <a class="btn my-buttonm" onclick="addToCartFun('${i}')">Add To Cart</a>
                 <i class="d-flex justify-content-center align-items-center  ${wishlistItems.includes(d[i].ID)  ? 'fa-solid' : 'fa-regular'} fa-heart heart-icon ${wishlistItems.includes(d[i].ID) ? 'liked' : ''}" id="${i}" onclick="addToWishList('${i}'); clicked('${i}');"></i>
+=======
+    if (iter == 6) {
+      break;
+    }
+box +=    `
+    <div class="col-lg-4 col-xl-3 col-12 col-sm-6 my-3 d-flex justify-content-center">
+        <div class="card" style="width: 20rem;">
+            <img src="../Resources/${d[i].Source}.png" class="card-img-top img-fluid" alt="${d[i].Title}"style=" height: 250px; object-fit: cover;" onclick="getproductid('${i}')">         
+            <div class="card-body">
+                <h5 class="card-title m-auto">${d[i].Title}</h5>
+                <h5 class="card-title m-auto">${d[i].Price} EGP</h5>
+                <h5 class="card-title m-auto">${d[i].Quantity}</h5>
+                <a class="btn my-buttonm" onclick="addToCartFun('${i}')">Add To Cart</a>
+                <i class="fa-regular fa-heart fa-xl" onclick="addToWishList('${i}');" style="color: #084432;"></i>
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
             </div>                                                                                                                                                                                                                   
         </div>
     </div>
@@ -141,6 +168,7 @@ box +=    `
     iter++;
   }
 
+<<<<<<< HEAD
 
 
   bestn.innerHTML = box;
@@ -156,6 +184,11 @@ function clicked(id){
 };
 
 
+=======
+  bestn.innerHTML = box;
+  addtocartfun();
+}
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
 function addtocartfun() {
   if (!currentUser) {
     addtocart.forEach((btn) => btn.classList.add("d-none"));
@@ -238,9 +271,16 @@ var box2 = "";
 async function displaycats(data) {
   for(const key in data){
     box2 += `
+<<<<<<< HEAD
       <div  style="cursor:pointer; background-color: white" class="col-12 col-md-2 p-3 text-center "onclick="getcatproducts('${data[key].name}')" >
      
             <p class=" d-flex justify-content-center align-content-center" style="margin:0px; padding: 15px color: rgb(17, 54, 54) !imprtant" >${data[key].name.toUpperCase()}</p>
+=======
+      <div style="cursor:pointer;" class="col-12 col-md-2 bg-success p-5 text-center "onclick="getcatproducts('${data[key].name}')" >
+     
+            <p class="text-white" >${data[key].name}</p>
+
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
     </div>`;
   }
 
@@ -295,6 +335,7 @@ var box3 = "";
 //   catn3.innerHTML = box3;
 //   addtocartfun();
 // }
+<<<<<<< HEAD
 var it2 = 1;
 async function displaycatproducts(d2) {
 
@@ -348,10 +389,30 @@ async function displaycatproducts(d2) {
          
   // </div>
   //   </div>`;
+=======
+async function displaycatproducts(d2) {
+ 
+  box3 = "";
+  for (var i = 0; i < d2.length; i++) {
+    box3 += `
+
+      <div class="col-12 col-md-6 bg-success py-2" >
+       <img src="../Resources/${d2[i].Source}.png" alt=""style="width:200px; height:200px;">
+      <p class="text-white">${d2[i].Title} </p>
+     
+      <p class="text-white">${d2[i].Category}</p>
+            <p class="text-white">$${d2[i].Price}</p>
+    
+    <div class="">
+         
+  </div>
+    </div>`;
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
   }
   catn3.innerHTML = box3;
   addtocartfun();
 }
+<<<<<<< HEAD
 
 /////////////////////////
 closecats.addEventListener("click", function () {
@@ -360,6 +421,10 @@ closecats.addEventListener("click", function () {
   close.classList.add("d-none");
 
   if(catn3)
+=======
+/////////////////////////
+closecats.addEventListener("click", function () {
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
   catn3.innerHTML = " ";
 });
 
@@ -499,8 +564,11 @@ async function saveCart() {
 async function addToWishList(productKey) {
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
   console.log("here");
   
   console.log(productKey);  
@@ -519,9 +587,13 @@ async function addToWishList(productKey) {
         for (const key in res2) {
 
           if(res2[key].ID === likedProduct.ID) {
+<<<<<<< HEAD
             
                           
             removeFromWishList(key);
+=======
+            alert("The product is added before.")
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
             return;
           }
            
@@ -568,6 +640,7 @@ function saveInFB(product){
 })
     
 }
+<<<<<<< HEAD
 
 
 function removeFromWishList(productKey){
@@ -663,3 +736,5 @@ function clk(e){
 
 }  
 
+=======
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892

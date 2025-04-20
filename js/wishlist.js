@@ -62,11 +62,14 @@ function unlikeProduct(id){
 
     let isConfirm = confirm("Do you want to unlike this product?");
 
+<<<<<<< HEAD
     console.log("hwweheeeh");
     console.log(id);
     
     
 
+=======
+>>>>>>> cd09c8ae40ff0bea69656f2744bb6048a6836892
     if(isConfirm){
         fetch(`https://client-side-technology-default-rtdb.firebaseio.com/wishlist/${id}.json`,{
             method: 'DELETE'
