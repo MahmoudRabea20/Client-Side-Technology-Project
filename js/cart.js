@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const listProduct = document.querySelector(".listproduct");
 const cartList = document.querySelector(".listcart");
 const cartIcon = document.querySelector(".icon-cart span");
@@ -171,7 +170,3 @@ async function emptyCart() {
  await saveCart();
 }
 
-=======
-
-
->>>>>>> 2a4a1dd5b82ce9b4cf41194ada99a790dca78003
