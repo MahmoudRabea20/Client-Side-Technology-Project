@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>your orders</title>
+  <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../css/cart.css">
+  <link rel="stylesheet" href="../css/font/all.css">
+  <link rel="stylesheet" href="../css/Addproducts.css">
+</head>
+<body>
+  
+  <!-- Start of Nav bar -->
+
+  <div class="homepage w-100 " id="homepage">
+    <div class="container2">
+      <nav id="navbar-example2" style="background-color: rgb(17, 54, 54) !important;padding-top:0px !important; margin-left:0px !important; padding-bottom:0px !important;" class="navbar bg-body-tertiary px-3 mb-3 position-fixed top-0 start-0 end-0 z-3">
+        <a href="./index.html"><img src="../Resources/logo.png" alt="Logo" class="rounded-circle text-center my-logo-image" style="height: 80px; width: 80px; padding: 10px;"></a>
+        <ul class="nav nav-pills">
+     
+          <li class="nav-item  d-none d-md-flex  ">
+            <a class="nav-link cursor-pointer position-relative cartn my-pronavm" href="./cart.html">
+              <i class=" fa-solid fa-cart-shopping fa-2xl"></i>
+              <!-- <p class="position-absolute top-0 end-0">0</p> -->
+            </a>
+          </li>
+          <li class="nav-item d-none d-md-flex   ">
+            <a class="nav-link cursor-pointer my-pronavm" href="./index.html">Home</a>
+          </li> 
+          <li class="nav-item  d-none d-md-flex   ">
+            <a class="nav-link wishlist cursor-pointer wishlistn my-pronavm" href="./wishlist.html">Wishlist</a>
+          </li>
+          <li class="nav-item d-none d-md-flex   ">
+            <a class="nav-link cursor-pointer my-pronavm" href="./products.html">Products</a>
+          </li>   
+          <li class="nav-item d-none d-md-flex   ">
+            <a class="nav-link cursor-pointer ordersn my-pronavm" href="./test.html">Orders</a>
+          </li>
+        
+          <!-- <li class="nav-item d-none d-md-flex  ">
+            <a class="nav-link cursor-pointer dashboardn" href="./AddProduct.html" >Dashboard</a>
+          </li> -->
+        <li  class="nav-item d-none d-md-flex  ">
+         <a class="my-buttonm nav-link cursor-pointer logout" style="color: white !important;" href="./index.html" >Log Out</a>
+       </li>   
+       </ul>
+      <!-- //mobile first -->
+       <div class="d-flex d-md-none">
+        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fa-2xl" style="color:white"></i>
+        </button>
+       </div>
+      </nav>
+      <!-- mobile first -->
+      <div class="collapse d-md-none pt-5"id="mobileMenu" style=" background: radial-gradient(circle, #135e69,#0d3448) !important ;">
+        <ul class="nav nav-pills d-flex flex-column align-items-end">
+        
+          <li class="nav-item  mt-5 ">
+            <a class="nav-link cursor-pointer position-relative cartn my-pronavm" href="./cart.html"><i class="fa-solid fa-cart-shopping fa-2xl"></i>
+              <!-- <p class="position-absolute top-0 end-0">0</p> -->
+            </a>
+          </li>
+          <li class="nav-item d-none d-md-flex   ">
+            <a class="nav-link cursor-pointer my-pronavm" href="./index.html">Home</a>
+          </li> 
+          <li class="nav-item   ">
+            <a class="nav-link cursor-pointer wishlistn my-pronavm" href="./wishlist.html">Wishlist</a>
+          </li>
+          <li class="nav-item   ">
+            <a class="nav-link cursor-pointer my-pronavm" href="./products.html">Products</a>
+          </li>
+          <li class="nav-item    ">
+            <a class="nav-link cursor-pointer ordersn my-pronavm" href="./test.html">Orders</a>
+          </li>
+         
+          <!-- <li class="nav-item   ">
+            <a class="nav-link cursor-pointer dashboardn" href="./AddProduct.html" >Dashboard</a>
+          </li> -->
+        <li  class="nav-item mt-4">
+          <a class="my-buttonm nav-link cursor-pointer logout " href="./index.html" type="button" style="color: white !important;">Log Out</a>
+         </li>   
+        </ul>
+      </div>
+      </div>
+  </div>
+
+  <!-- End of Nav bar -->
+
+
+  <div class="container">
+      <h3 class="mt-5">Your Orders</h3>
+      <div id="myOrders"  class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 "></div>
+  </div>
+
+
+
+
+
+<!-- Firebase App -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<!-- Firebase Realtime Database -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
+  <script src="../js/bootstrap/bootstrap.bundle.js"></script>
+  <script src="../js/font/all.js"></script>
+  <script src="../js/orderOfUsers.js"></script>
+</body>
+</html>
