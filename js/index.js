@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var arr = [];
 var d = {};
 var d2 = [];
@@ -663,6 +662,5 @@ function clk(e){
   
 
 }  
-=======
->>>>>>> 2a4a1dd5b82ce9b4cf41194ada99a790dca78003
+
 
